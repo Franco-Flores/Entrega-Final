@@ -1,0 +1,14 @@
+p{
+    padding-top: 8px;
+    text-align: justify;
+    margin-right: 30px;
+};
+
+.subtitulos{
+    display: flex;
+    justify-content: center;
+    color:map-get($color-letras, colortitulo);
+    font-size: map-get($tamaño-tipografia, subtitulos );
+    font-size: 2cm;
+
+}

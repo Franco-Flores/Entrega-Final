@@ -1,0 +1,53 @@
+body{
+    background-color: $color-principal;
+}
+
+header {
+    @extend %arriba;
+}
+
+div a {
+    color: $color-principal
+}
+
+h1{
+    
+    font-size: map-get($tamaño-tipografia , titulo);
+    @extend %flex-center;
+    @include flexbox(column, center, center);
+    color: map-get($color-letras, colortitulo );
+}
+
+h2{
+    font-size: map-get(
+        $tamaño-tipografia , subtitulos );
+
+    font-family: serif;    
+}
+
+p{
+    font-family: $texto;
+    height: auto;
+    display: flex;
+    
+}
+
+
+
+
+.logo{
+    width: $medidalogo;
+}
+
+.parrafoIndex {
+    
+    justify-content: center;
+    background-color: $parrafofondo;
+    margin: 0px 350px 0px 350px;
+    text-align: justify;
+    padding: 30px;
+    color: map-get($color-letras, colorparrafo );
+    display: flex;
+    
+
+};

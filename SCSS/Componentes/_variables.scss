@@ -1,0 +1,94 @@
+body {
+    @media screen and (max-width: 850px){
+        
+        .parrafoIndex{
+            
+            margin: auto;
+            
+
+        }
+        img {
+            max-width: 150%;
+            max-height: 100%;
+           }
+
+    
+    }
+}
+
+
+
+
+$color-principal: #7ac2d4;
+
+
+$texto: comic;
+
+$colorabajo: #ccc;
+
+$medidalogo: 100px;
+
+$parrafofondo: #D4D3DB;
+
+
+
+
+
+/* Maps */
+
+$tamaño-tipografia:(
+    titulo:50px,
+    subtitulos:20px,
+    parrafo:24px,
+);
+
+
+$color-letras:(
+    colorparrafo: #0e5556,
+    colortitulo: rgb(11, 53, 98),
+)
+;
+/* Extend */
+
+%flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+};
+
+%arriba {
+    background-color: #a0d9e7;
+};
+
+@mixin flexbox ($direction, $justify, $aling){
+    display: flex;
+    direction: $direction ;
+    justify-content: $justify;
+    align-items: $aling;
+
+};
+
+
+
+.foto-mayor:hover{
+    
+    padding-left: 50px;
+    filter: saturate(180%);
+    
+};
+
+.TextoHistoria{
+    padding: 50px;
+    text-align: justify
+};
+
+footer a {
+    height: 156px;
+    
+   
+}
+
+footer img {
+    height: 4cm;
+    width: 150px;
+}
